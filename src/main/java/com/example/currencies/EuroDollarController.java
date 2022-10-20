@@ -10,4 +10,9 @@ public class EuroDollarController {
     public String eurodollar(double euro) {
         return String.format("%.2f€ in USD: %.2f$", euro, euro*0.98);
     }
+
+    @GetMapping("/dollareuro")
+    public String dollareuro(double dollar) {
+        return String.format("%.2f€ in USD: %.2f$", dollar, dollar*1.02);
+    }
 }
